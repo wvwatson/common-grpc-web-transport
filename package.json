@@ -1,0 +1,33 @@
+{
+	"name": "@reclaimprotocol/common-grpc-web-transport",
+	"version": "1.0.1",
+	"description": "",
+	"main": "lib/index",
+	"scripts": {
+		"build": "tsc",
+		"prepare": "tsc",
+		"lint": "npm exec eslint . -- --ext .ts",
+		"lint:fix": "npm run lint -- --fix"
+	},
+	"keywords": [],
+	"author": "Adhiraj Singh",
+	"license": "ISC",
+	"dependencies": {
+		"@improbable-eng/grpc-web": "^0.15.0",
+		"http-parser-js": "^0.5.8"
+	},
+	"peerDependencies": {
+		"react-native-tcp-socket": "*"
+	},
+	"peerDependenciesMeta": {
+		"react-native-tcp-socket": {
+			"optional": true
+		}
+	},
+	"devDependencies": {
+		"@adiwajshing/eslint-config": "github:adiwajshing/eslint-config",
+		"@types/node": "^16.18.11",
+		"eslint": "^8.40.0",
+		"typescript": "^4.2.3"
+	}
+}
